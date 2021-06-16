@@ -1,0 +1,131 @@
+/******************************************************************
+
+Stylesheet: スマートフォンサイズのモニタで適用
+
+******************************************************************/
+/*-------------------------------
+
+	base
+
+-------------------------------*/
+.inner {
+	padding: 0 15px;
+	width: 100%;
+}
+h2 {
+	font-size: 3rem;
+	&::after {
+		height: 3px;
+	}
+}
+/*-------------------------------
+
+	header
+
+-------------------------------*/
+.header {
+	> .flex {
+		flex-direction: column;
+	}
+	> .inner {
+		> h1 {
+			width: 175px;
+		}
+		> ul {
+			> li {
+				font-size: 1.6rem;
+				color: #555555;
+				margin: 0 22px;
+				&:first-child {
+					margin-left: none;
+				}
+				&:last-child {
+					margin-right: none;
+				}
+			}
+		}
+	}
+}
+/*-------------------------------
+
+	kv
+
+-------------------------------*/
+.kv {
+	height: 360px;
+}
+/*-------------------------------
+
+	menu
+
+-------------------------------*/
+.menu {
+	padding-top: 64px;
+	> h2 {
+		margin-bottom: 37px;
+	}
+	&__list {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	&__item {
+		margin-bottom: 45px;
+		width: 81.1%;
+		color: #555555;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		> h3 {
+			margin-bottom: 5px;
+		}
+		> p {
+			font-size: 1.6rem;
+		}
+	}
+	&__img {
+		margin-bottom: 21px;
+	}
+}
+/*-------------------------------
+
+	about
+
+-------------------------------*/
+.about {
+	padding-top: 91px;
+	margin-bottom: 60px;
+	> h2 {
+		margin-bottom: 46px;
+	}
+	&__body {
+		flex-direction: column;
+	}
+	&__text {
+		align-self: center;
+		text-align: center;
+		width: 81.1%;
+		> .btn {
+			margin-bottom: 50px;
+		}
+	}
+	&__title {
+		margin-bottom: 22px;
+		font-size: 2.6rem;
+	}
+	&__lead {
+		margin-bottom: 25px;
+		font-size: 1.6rem;
+	}
+	&__img {
+		width: 100%;
+		height: auto;
+	}
+}
+/*-------------------------------
+
+	footer
+
+-------------------------------*/
+.footer {
+	padding: 12px 0;
+}
